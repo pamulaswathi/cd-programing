@@ -1,0 +1,28 @@
+
+%{
+#include<stdio.h>
+%}
+
+arth    [\+|\-|\*|\/]
+rel     (<|>|<=|>=|!=|==)
+log     (\|\||&&|!)
+bit     (&|<<|>>|\^)
+
+
+%%
+{arth} {printf("%s is a arthimetic operator",yytext);}
+{rel}  {printf("%s is an relational operator",yytext);}
+{log}  {printf("%s is an logical operator",yytext);}
+{bit}  {printf("%s is an bitwise operator",yytext);}
+%%
+
+int yywrap(){
+return 0;
+}
+
+void main(){
+
+yylex();
+}
+
+
