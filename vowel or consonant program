@@ -1,0 +1,21 @@
+//vowelornot
+%{
+#include <stdio.h>
+%}
+
+vowel      [aeiouAEIOU]
+Digit      [0-9]
+consonant  [b-df-hj-np-tv-zB-DF-HJ-NP-TV-Z]
+
+%%
+{vowel}     { printf("%s is a vowel character\n", yytext); }
+{consonant} { printf("%s is a consonant character\n", yytext); }
+{Digit}     { printf("%s is a digit\n", yytext); }
+.|\n        { /* ignore other characters */ }
+%%
+
+
+int main() {
+    yylex();
+    return 0;
+}
