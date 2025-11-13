@@ -1,11 +1,3 @@
-/*
- * Program 13: Yacc Calculator with Lex
- * 
- * This Yacc program implements a calculator that evaluates arithmetic expressions
- * containing addition (+) and multiplication (*) operations with parentheses.
- * It uses a separate Lex file (Program13.l) for lexical analysis.
- * Grammar: E -> E+E/E*E/(E)/DIGIT
- */
 
 //Yacc with lex.y //
 
