@@ -1,11 +1,4 @@
-/*
- * Program 8: Recursive Descent Parser with Lookahead
- * 
- * This program implements a top-down recursive descent parser with lookahead for arithmetic expressions.
- * Grammar: E -> T E', E' -> + T E' | ε, T -> F T', T' -> * F T' | ε, F -> (E) | id
- * The parser uses a lookahead character to make parsing decisions and validates expressions
- * containing addition (+), multiplication (*), parentheses, and the terminal symbol 'id'.
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
