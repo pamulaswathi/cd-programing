@@ -1,12 +1,3 @@
-/*
- * Program 17: Stack Allocation Strategy for Compilers
- * 
- * This program implements a stack allocation method used by compilers for managing
- * memory during program execution. It simulates the activation record stack where
- * each function call creates a new frame (activation record) on the stack, and
- * function returns remove frames from the stack. This demonstrates how compilers
- * manage local variables and function call contexts using a stack-based approach.
- */
 
 #include <stdio.h>
 #include <string.h>
