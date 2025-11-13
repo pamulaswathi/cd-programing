@@ -1,18 +1,3 @@
-/*
- * Program 14: YACC Top-Down Parser for Arithmetic Expressions
- * 
- * This YACC program implements a top-down parser for arithmetic expressions
- * using a grammar after eliminating left recursion.
- * Grammar:
- *   E  -> T E'
- *   E' -> + T E' | ε
- *   T  -> F T'
- *   T' -> * F T' | ε
- *   F  -> ( E ) | id
- * 
- * The parser validates expressions containing addition (+), multiplication (*),
- * parentheses, and the terminal symbol 'id'.
- */
 
 %{
 #include <stdio.h>
