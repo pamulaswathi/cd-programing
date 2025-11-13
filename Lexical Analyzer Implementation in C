@@ -1,10 +1,4 @@
-/*
- * Program 15: Lexical Analyzer Implementation in C
- * 
- * This program implements a lexical analyzer that reads from a file and identifies
- * different types of tokens: keywords, identifiers, operators, and numbers.
- * It processes C-like code and classifies each token appropriately.
- */
+
 
 #include <stdio.h>
 #include <stdlib.h>
