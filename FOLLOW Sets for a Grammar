@@ -1,22 +1,4 @@
-/*
- * Program 16: Computing FOLLOW Sets for a Grammar
- * 
- * This program computes and displays the FOLLOW sets for non-terminals in a given grammar.
- * The FOLLOW set of a non-terminal contains all terminal symbols that can appear immediately
- * after that non-terminal in some sentential form. Epsilon is represented as '$'.
 
-Note: Only works for the given input and productions.
-input:
-Enter the productions (epsilon = $): 8
-E=TD
-D=+TD
-D=$
-T=FS
-S=*FS
-S=$
-F=(E)
-F=a
- */
 
 #include<stdio.h>
 #include<string.h>
